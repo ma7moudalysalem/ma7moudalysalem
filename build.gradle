@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.ma7moudalysalem'
+version = '1.0-SNAPSHOT'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    implementation name: 'snakeyaml-2.0'
+}
